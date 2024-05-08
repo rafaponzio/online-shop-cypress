@@ -19,6 +19,14 @@ describe('User Login', () => {
         .should('be.visible')
     })
 
+    it('login should fail with a invalid password', () => {      
+      const { user } = users['standard']
+
+      cy.login(user, 'invalid_pass')
+  
+      cy.checkLoginError('Epic sadface: Username and password do not match any user in this service')
+    })
+
     it('locked out user should not logging in', () => {
       const { user, password } = users['locked_out']
 
