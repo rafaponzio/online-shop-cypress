@@ -14,13 +14,13 @@ This project contains automated end-to-end tests for the Online Shop MVP using C
 1. **Clone this repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/rafaponzio/online-shop-cypress
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd online-shop-automation
+   cd online-shop-cypress
    ```
 
 3. **Install dependencies:**
