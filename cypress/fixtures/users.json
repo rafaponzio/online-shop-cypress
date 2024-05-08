@@ -2,5 +2,9 @@
   "standard": {
     "user": "standard_user",
     "password": "secret_sauce"
+  },
+  "locked_out": {
+    "user": "locked_out_user",
+    "password": "secret_sauce"
   }
 }
