@@ -1,0 +1,17 @@
+{
+  "name": "online-shop-cypress",
+  "version": "1.0.0",
+  "description": "Cypress project to test an online shop",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaponzio/online-shop-test"
+  },
+  "author": "Rafael Ponzio",
+  "devDependencies": {
+    "cypress": "^9.5.1"
+  }
+}
