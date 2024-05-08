@@ -33,5 +33,5 @@ describe('User Login', () => {
       cy.login(user, password)
 
       cy.checkLoginError('Epic sadface: Sorry, this user has been locked out.')
-    });
+    })
   })
