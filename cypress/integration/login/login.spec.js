@@ -11,14 +11,7 @@ describe('User Login', () => {
       
       const { user, password } = users['standard']
 
-      cy.getByDataTest('username')
-        .type(user)
-  
-      cy.getByDataTest('password')
-        .type(password, {log: false})
-  
-      cy.getByDataTest('login-button')
-        .click()
+      cy.login(user, password)
   
       cy.url()
         .should('include', '/inventory.html')
