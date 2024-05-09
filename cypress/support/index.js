@@ -17,6 +17,7 @@
 import './commands/common'
 import './commands/login'
 import './commands/cart'
+import './commands/checkout'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
