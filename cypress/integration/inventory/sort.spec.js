@@ -4,7 +4,7 @@ const users = require('../../fixtures/users.json')
 
 const { user, password } = users['standard']
 
-describe('Sort', () => {
+describe('Sort products', () => {
     before(() => {      
 
       cy.visit('/')
