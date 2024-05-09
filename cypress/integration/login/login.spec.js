@@ -24,7 +24,7 @@ describe('User Login', () => {
 
       cy.login(user, 'invalid_pass')
   
-      cy.checkLoginError('Epic sadface: Username and password do not match any user in this service')
+      cy.checkError('Epic sadface: Username and password do not match any user in this service')
     })
 
     it('locked out user should not logging in', () => {
@@ -32,6 +32,6 @@ describe('User Login', () => {
 
       cy.login(user, password)
 
-      cy.checkLoginError('Epic sadface: Sorry, this user has been locked out.')
+      cy.checkError('Epic sadface: Sorry, this user has been locked out.')
     })
   })

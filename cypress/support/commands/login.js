@@ -8,9 +8,3 @@ Cypress.Commands.add('login', (user, password) => {
     cy.getByDataTest('login-button')
     .click()
 })
-
-Cypress.Commands.add('checkLoginError', message => {
-    cy.getByDataTest('error')
-        .should('be.visible')
-        .and('have.text', message)
-})
