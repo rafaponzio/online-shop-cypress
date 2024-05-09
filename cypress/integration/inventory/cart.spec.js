@@ -16,7 +16,6 @@ describe('Cart - Inventory Page', () => {
   })
 
   it('should add 1 product to the cart', () => {          
-    const productName = 'Sauce Labs Backpack'
 
     cy.addProductToCartByID('add-to-cart-sauce-labs-backpack')
 
@@ -25,19 +24,16 @@ describe('Cart - Inventory Page', () => {
   })
 
   it('should add 3 products to the cart', () => {          
-    const productName = 'Sauce Labs Backpack'
 
     cy.addProductToCartByID('add-to-cart-sauce-labs-backpack')
     cy.addProductToCartByID('add-to-cart-sauce-labs-bike-light')
     cy.addProductToCartByID('add-to-cart-sauce-labs-bolt-t-shirt')
 
     cy.checkCartBadgeQuantity('3')
-    
 
   })
 
   it('should remove items from cart', () => {          
-    const productName = 'Sauce Labs Backpack'
 
     cy.addProductToCartByID('add-to-cart-sauce-labs-backpack')
     cy.addProductToCartByID('add-to-cart-sauce-labs-bike-light')
