@@ -19,6 +19,30 @@ describe('User Login', () => {
         .should('be.visible')
     })
 
+    it('successful login with a valid user and password for problem_user', () => {      
+      const { user, password } = users['problem']
+
+      cy.login(user, password)
+  
+      cy.url()
+        .should('include', '/inventory.html')
+
+      cy.contains('Products')
+        .should('be.visible')
+    })
+
+    it('successful login with a valid user and password for performance_glitch_user', () => {      
+      const { user, password } = users['performance_glitch']
+
+      cy.login(user, password)
+  
+      cy.url()
+        .should('include', '/inventory.html')
+
+      cy.contains('Products')
+        .should('be.visible')
+    })
+
     it('login should fail with a invalid password', () => {      
       const { user } = users['standard']
 

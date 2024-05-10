@@ -10,5 +10,10 @@
   "problem": {
     "user": "problem_user",
     "password": "secret_sauce"
+  },
+  "performance_glitch": {
+    "user": "performance_glitch_user",
+    "password": "secret_sauce"
   }
 }
+
